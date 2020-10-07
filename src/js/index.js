@@ -1,15 +1,13 @@
-/*
+
 import Search from "./module/Search";
-
-/!** Global state of the app
- * - search object
- * - current recipe
- * - shopping list object
- * - liked recipes**!/
-
+/**Global state of the app
+ *- search object
+ - current recipe
+ - shopping list object
+ - liked recipes **/
 const state={};
 
-const controlSearch =()=>{
+const controlSearch =async()=>{
     //1)Get query from view
     const query ='pizza';//TODO
 
@@ -34,4 +32,4 @@ document.querySelector('.search').addEventListener('submit',e =>{
 });
 const search = new Search('pizza');
 console.log(search);
-search.getResults();*/
+search.getResults();
