@@ -37,4 +37,8 @@ elements.searchForm.addEventListener('submit',e =>{
     e.preventDefault();
     controlSearch();
 });
+elements.searchResPages.addEventListener('click',e=>{
+    const btn = e.target.closest('.btn_inline');
+    console.log(btn);
+})
 
